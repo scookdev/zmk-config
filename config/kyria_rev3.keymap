@@ -30,7 +30,7 @@
             &kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &kp ESC   &kp A &kp S &kp D &kp F &kp G                                                  &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
             &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT            &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &kp LGUI &kp DEL &kp RET &kp LOWER &mo SPACE     &kp RET &kp UPPER &kp TAB &kp BSPC &kp RALT
+                                  &kp LGUI &kp DEL &kp RET &mo lower &mo SPACE     &kp RET &mo upper &kp TAB &kp BSPC &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,8 +42,8 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &bt BT_CLR &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2              &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans     &bt BT_SEL3 &bt BT_SEL4 &trans                    &trans &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
                                  &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
             >;
@@ -57,8 +57,8 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &bt BT_CLR &bt BT_SEL0 &bt BT_SEL1 &bt BT_SEL2              &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans     &bt BT_SEL3 &bt BT_SEL4 &trans                    &trans &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
                                  &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
             >;
