@@ -29,7 +29,7 @@
             bindings = <
             &kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &mt LCTRL ESC   &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &mo 3             &mo 4   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &mo 3              &mo 4   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                                   &kp LGUI &kp DEL &kp RET &mo 1 &kp SPACE       &kp RET &mo 2 &kp TAB &kp BSPC &kp RALT
             >;
 
@@ -45,8 +45,8 @@
             bindings = <
                 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                               &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
                 &trans    &trans &trans &trans &trans &trans                               &trans &trans &trans &trans &trans &kp EQUAL
-                &trans    &trans &trans &trans &trans &trans &trans &trans      &trans    &trans &trans &trans &trans &trans &trans &trans
-                                        &trans &trans &trans &trans &trans      &trans    &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans  &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &trans &trans &trans
+                                        &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
         };
 
@@ -59,8 +59,8 @@
             bindings = <
                 &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp UNDERS
                 &trans &trans &trans &trans  &trans &trans                                   &trans &trans &trans &trans &trans &kp PLUS
-                &trans &trans &trans &trans  &trans &trans &trans &trans      &trans        &trans &trans &trans &trans &trans &trans &trans
-                                      &trans &trans &trans &trans &trans      &trans        &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans  &trans &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans &trans
+                                      &trans &trans &trans &trans &trans                    &trans &trans &trans &trans &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
@@ -74,8 +74,8 @@
             bindings = <
                 &trans &trans &rgb_underglow_on  &rgb_underglow_off &rgb_ug_toggle &trans                 &trans &trans &trans &trans &trans &trans
                 &trans &trans &rgb_ug_brightness_up &rgb_ug_brightness_down &trans &trans                 &trans &trans &trans &trans &trans &trans
-                &trans &trans &rgb_ug_hue_up  &rgb_ug_hue_down  &rgb_ug_sat_up &rgb_ug_sat_down &trans &trans &trans &trans &trans &trans &trans &trans
-                                            &trans &rgb_ug_speed_up &rgb_ug_speed_down &trans &trans  &trans &trans &trans &trans &trans
+                &trans &trans &rgb_ug_hue_up  &rgb_ug_hue_down  &rgb_ug_sat_up &rgb_ug_sat_down &trans    &trans &trans &trans &trans &trans &trans &trans &trans
+                                            &trans &rgb_ug_speed_up &rgb_ug_speed_down &trans &trans      &trans &trans &trans &trans &trans
             >;
         };
 
