@@ -29,8 +29,8 @@
             bindings = <
             &kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                  &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
             &mt LCTRL ESC   &kp A &kp S &kp D &kp F &kp G                                            &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &mo 3              &mo 4   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                  &kp LGUI &kp DEL &kp RET &mo 1 &kp SPACE       &kp RET &mo 2 &kp TAB &kp BSPC &kp RALT
+            &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &mo 1              &mo 1   &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                                  &kp LGUI &kp DEL &kp RET &mo 1 &kp SPACE       &kp RET &mo 1 &kp TAB &kp BSPC &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -48,51 +48,6 @@
                 &trans &trans &trans &trans  &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &trans &trans &trans
                                         &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
-        };
-
-        symbol_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |  !  |  @  |  #  |  $  |  %  |                                          |  ^  |  &  |  *  |  (  |  )  |  _  |
-            // |       |     |     |     |     |     |                                          |     |     |     |     |     |  +  |
-            // |       |     |     |     |     |     |      |      |      |      |      |      |     |     |     |     |     |     |
-            //                     |      |      |      |      |      |      |      |      |      |      |      |
-            bindings = <
-                &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp UNDER
-                &trans &trans &trans &trans  &trans &trans                                   &trans &trans &trans &trans &trans &kp PLUS
-                &trans &trans &trans &trans  &trans &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans &trans
-                                      &trans &trans &trans &trans &trans                    &trans &trans &trans &trans &trans
-            >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-        };
-
-        led_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      | LED ON | LED OFF | LED TOG |       |                                          |      |      |      |      |      |      |
-            // |       |      | BRIGHT+| BRIGHT- |         |       |                                          |      |      |      |      |      |      |
-            // |       |      | HUE+   | HUE-    | SAT+    | SAT-  |       |       |       |       |       |       |       |       |       |       |
-            //                       |          | SPEED+ | SPEED- |       |       |       |       |       |       |       |
-            bindings = <
-                &trans &trans &rgb_underglow_on  &rgb_underglow_off &rgb_ug_toggle &trans                 &trans &trans &trans &trans &trans &trans
-                &trans &trans &rgb_ug_brightness_up &rgb_ug_brightness_down &trans &trans                 &trans &trans &trans &trans &trans &trans
-                &trans &trans &rgb_ug_hue_up  &rgb_ug_hue_down  &rgb_ug_sat_up &rgb_ug_sat_down &trans    &trans &trans &trans &trans &trans &trans &trans &trans
-                                            &trans &rgb_ug_speed_up &rgb_ug_speed_down &trans &trans      &trans &trans &trans &trans &trans
-            >;
-        };
-
-        bluetooth_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
-            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
-            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-            bindings = <
-            &trans &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2              &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans                    &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
