@@ -57,7 +57,7 @@
             // |       |     |     |     |     |     |      |      |      |      |      |      |     |     |     |     |     |     |
             //                     |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-                &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp UNDERS
+                &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp UNDER
                 &trans &trans &trans &trans  &trans &trans                                   &trans &trans &trans &trans &trans &kp PLUS
                 &trans &trans &trans &trans  &trans &trans &trans &trans                    &trans &trans &trans &trans &trans &trans &trans &trans
                                       &trans &trans &trans &trans &trans                    &trans &trans &trans &trans &trans
