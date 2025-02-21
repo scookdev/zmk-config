@@ -72,5 +72,15 @@
                                         &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
         };
+
+        led_layer {
+            bindings = <
+                &bt BT_SEL 0 &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &trans                               &trans &trans &trans &trans &trans &trans
+                &trans    &trans &trans &trans &trans &trans                               &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans  &trans &trans &trans &trans                   &trans &trans &trans &trans &trans &trans &trans &trans
+                                        &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
+            >;
+        };
+
     };
 };
