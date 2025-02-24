@@ -9,11 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/* Uncomment this block if using RGB
+/* Uncomment this if using RGB - need to figure out where to put it
 &led_strip {
     chain-length = <6>;
     // chain-length = <31>; // Uncomment if using both per-key and underglow LEDs
     // chain-length = <25>; // Uncomment if using only per-key LEDs.
+};
+
+&rgb_ug {
+    color = <255 0 0>; // Default red
+    brightness = <128>; // 50% brightness
+    effect = <UNDERGLOW_BREATHE>; // Breathing effect
 };
 */
 
@@ -82,15 +88,5 @@
                                         &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
         };
-    };
-
-    &led_strip {
-        chain-length = <6>;
-    };
-
-    &rgb_ug {
-        color = <255 0 0>; // Default red
-        brightness = <128>; // 50% brightness
-        effect = <UNDERGLOW_BREATHE>; // Breathing effect
     };
 };
