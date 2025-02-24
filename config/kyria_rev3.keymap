@@ -16,7 +16,7 @@
     // chain-length = <25>; // Uncomment if using only per-key LEDs.
 };
 
-&underglow {
+&rgb_ug {
     color = <255 0 0>; // Default red
     brightness = <128>; // 50% brightness
     effect = <UNDERGLOW_BREATHE>; // Breathing effect
