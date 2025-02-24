@@ -82,6 +82,15 @@
                                         &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
         };
+    };
 
+    &led_strip {
+        chain-length = <6>;
+    };
+
+    &rgb_ug {
+        color = <255 0 0>; // Default red
+        brightness = <128>; // 50% brightness
+        effect = <UNDERGLOW_BREATHE>; // Breathing effect
     };
 };
