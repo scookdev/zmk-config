@@ -1,0 +1,12 @@
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
+
+&spi3 {
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        chain-length = <12>;
+    };
+};
