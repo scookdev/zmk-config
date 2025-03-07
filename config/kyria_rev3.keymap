@@ -24,7 +24,7 @@
                                   &none &kp LGUI &kp LALT &mo 1 &kp RET       &kp SPACE &mo 2 &kp RALT &kp RGUI &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         number_layer {
